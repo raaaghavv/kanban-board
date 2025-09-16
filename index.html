@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Kanban Board</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Simple Kanban Board</h1>
+        <p>Drag tasks between columns to update their status</p>
+      </div>
+
+      <div class="task-form">
+        <div class="form-row">
+          <input type="text" id="taskTitle" placeholder="Task title" required />
+          <textarea
+            id="taskDescription"
+            placeholder="Description (optional)"
+            rows="2"
+          ></textarea>
+          <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+        </div>
+      </div>
+
+      <div class="board">
+        <div class="column" data-status="todo">
+          <div class="column-header">
+            <div class="column-title">📋 To Do</div>
+          </div>
+          <div class="tasks" id="todo-tasks">
+            <div class="empty-message">No tasks yet</div>
+          </div>
+        </div>
+
+        <div class="column" data-status="inprogress">
+          <div class="column-header">
+            <div class="column-title">🚀 In Progress</div>
+          </div>
+          <div class="tasks" id="inprogress-tasks">
+            <div class="empty-message">No tasks in progress</div>
+          </div>
+        </div>
+
+        <div class="column" data-status="done">
+          <div class="column-header">
+            <div class="column-title">✅ Done</div>
+          </div>
+          <div class="tasks" id="done-tasks">
+            <div class="empty-message">No completed tasks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">Edit Task</div>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="editTitle" placeholder="Task title" />
+          <textarea
+            id="editDescription"
+            placeholder="Description"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="modal-actions">
+          <button id="closeEditModal" class="btn btn-edit">Cancel</button>
+          <button id="saveEditBtn" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
