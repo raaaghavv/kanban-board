@@ -3,7 +3,7 @@
 ## Make your first To-Do: [Open](https://kanbanto-do.netlify.app/)
 
 A lightweight Kanban board built with HTML, CSS, and vanilla JavaScript.
-Tasks are stored in localStorage so they persist across page refreshes—no backend required.
+Tasks are stored in localStorage so they persist across page refreshes.
 
 ## ✨ Features
 
