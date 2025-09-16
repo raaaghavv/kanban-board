@@ -1,5 +1,7 @@
 # Kanban Board To-Do App
 
+## Make your first To-Do: [Open](https://kanbanto-do.netlify.app/)
+
 A lightweight Kanban board built with HTML, CSS, and vanilla JavaScript.
 Tasks are stored in localStorage so they persist across page refreshes—no backend required.
 
@@ -26,7 +28,7 @@ kanban-board/
 │   ├── dragDrop.js     # Drag & drop handling
 │   └── utils.js        # Small utilities (ID generator)
 ├── index.html          # Main HTML entry point
-└── README.md          
+└── README.md
 ```
 
 ## 🛠️ Development Notes
